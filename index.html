@@ -3,6 +3,11 @@
 <head>
   <title>Audio Samples from Llama-VITS</title>
   <style>
+    table {
+      width: 100%;  /* Optional: ensures the table uses full width of its container */
+      table-layout: fixed; /* Helps in evenly distributing column widths */
+    }
+
     .audio-description {
       display: flex;
       align-items: center; /* 垂直居中对齐 */
@@ -16,7 +21,8 @@
     }
     
     audio {
-      width: 200px; /* 设置音频控件宽度 */
+      /* width: 200px; 设置音频控件宽度 */
+      width: 100%;  /* Makes the audio tag fill the entire cell width */
     }
 
     .contents-list {
@@ -315,7 +321,7 @@
     </tr>
   </table>
 
-  
+
   <!-- 表格3 -->
   <h2 id="table3">EmoV_DB_bea_sem</h2>
   <hr> <!-- 添加水平分割线 -->
