@@ -209,21 +209,107 @@
   <table>
     <tr>
       <th>Model</th>
-      <th class="text">t1</th>
-      <th class="text">t2</th>
-      <th class="text">t3</th>
+      <th class="text">the forms of printed letters should be beautiful and that their arrangement on the page should be reasonable and a help to the shapeliness of the letters themselves.</th>
+      <th class="text">have now come into general use and are obviously a great improvement on the ordinary modern style in use in England, which is in fact the Bodoni type.</th>
+      <th class="text">It was hoped that their rulers would hire accommodation in the county prisons, and that the inferior establishments would in course of time disappear.</th>
+      <th class="text">The disgraceful overcrowding had been partially ended. But the same evils of indiscriminate association were still present. There was the old neglect of decency.</th>
+      <th class="text">wherefore let him that thinketh he standeth, take heed lest he fall, and was full of the most pointed allusions to the culprit.</th>
     </tr>
     <tr>
-      <td>Model C</td>
-      <td><audio controls><source src="sample.wav" type="audio/mpeg"></audio></td>
-      <td><audio controls><source src="sample.wav" type="audio/mpeg"></audio></td>
-      <td><audio controls><source src="sample.wav" type="audio/mpeg"></audio></td>
+      <td>Ground Truth</td>
+      <td><audio controls><source src="gt_LJ001-0015.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="gt_LJ001-0096.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="gt_LJ004-0036.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="gt_LJ006-0043.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="gt_LJ011-0048.wav" type="audio/mpeg"></audio></td>
     </tr>
     <tr>
-      <td>Model D</td>
-      <td><audio controls><source src="sample.wav" type="audio/mpeg"></audio></td>
-      <td><audio controls><source src="sample.wav" type="audio/mpeg"></audio></td>
-      <td><audio controls><source src="sample.wav" type="audio/mpeg"></audio></td>
+      <td>ORI-VITS</td>
+      <td><audio controls><source src="ori_LJ001-0015.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="ori_LJ001-0096.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="ori_LJ004-0036.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="ori_LJ006-0043.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="ori_LJ011-0048.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td>BERT-VITS w/ [CLS]</td>
+      <td><audio controls><source src="bert-cls_LJ001-0015.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-cls_LJ001-0096.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-cls_LJ004-0036.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-cls_LJ006-0043.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-cls_LJ011-0048.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td>BERT-VITS w/ [BERT_TEX]</td>
+      <td><audio controls><source src="bert-tex_LJ001-0015.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-tex_LJ001-0096.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-tex_LJ004-0036.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-tex_LJ006-0043.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-tex_LJ011-0048.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td>BERT-VITS w/ [BERT_PHO]</td>
+      <td><audio controls><source src="bert-pho_LJ001-0015.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-pho_LJ001-0096.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-pho_LJ004-0036.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-pho_LJ006-0043.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-pho_LJ011-0048.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td><b>Llama-VITS w/ [AVE]</b></td>
+      <td><audio controls><source src="llama-ave_LJ001-0015.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-ave_LJ001-0096.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-ave_LJ004-0036.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-ave_LJ006-0043.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-ave_LJ011-0048.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td><b>Llama-VITS w/ [PCA]</b></td>
+      <td><audio controls><source src="llama-pca_LJ001-0015.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-pca_LJ001-0096.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-pca_LJ004-0036.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-pca_LJ006-0043.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-pca_LJ011-0048.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td><b>Llama-VITS w/ [LAST]</b></td>
+      <td><audio controls><source src="llama-last_LJ001-0015.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-last_LJ001-0096.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-last_LJ004-0036.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-last_LJ006-0043.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-last_LJ011-0048.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td><b>Llama-VITS w/ [EIS_Word]</b></td>
+      <td><audio controls><source src="llama-word_LJ001-0015.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-word_LJ001-0096.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-word_LJ004-0036.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-word_LJ006-0043.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-word_LJ011-0048.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td><b>Llama-VITS w/ [EIS_Sentence]</b></td>
+      <td><audio controls><source src="llama-sentence_LJ001-0015.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-sentence_LJ001-0096.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-sentence_LJ004-0036.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-sentence_LJ006-0043.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-sentence_LJ011-0048.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td><b>Llama-VITS w/ [TEX]</b></td>
+      <td><audio controls><source src="llama-tex_LJ001-0015.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-tex_LJ001-0096.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-tex_LJ004-0036.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-tex_LJ006-0043.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-tex_LJ011-0048.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td><b>Llama-VITS w/ [PHO]</b></td>
+      <td><audio controls><source src="llama-pho_LJ001-0015.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-pho_LJ001-0096.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-pho_LJ004-0036.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-pho_LJ006-0043.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-pho_LJ011-0048.wav" type="audio/mpeg"></audio></td>
     </tr>
   </table>
 
