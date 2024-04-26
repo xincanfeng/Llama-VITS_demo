@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>我的音频样本</title>
-  <style>
+  <title>Audio Samples from Llama-VITS</title>
+  <!-- <style>
     table, th, td {
       border: 0px solid black;
       border-collapse: collapse;
@@ -18,7 +18,23 @@
       padding: 5px;
       display: block;
     }
-  </style>
+  </style> -->
+  <style>
+    .audio-description {
+      display: flex;
+      align-items: center; /* 垂直居中对齐 */
+      margin-bottom: 10px; /* 添加一些底部间距 */
+    }
+    
+    .description {
+      margin-right: 20px; /* 右侧间距，确保标签和音频之间有空间 */
+      font-weight: bold; /* 加粗字体 */
+    }
+    
+    audio {
+      width: 200px; /* 设置音频控件宽度 */
+    }
+    </style>    
 </head>
 <body>
   <h1>Audio Samples from "Llama-VITS: Enhancing TTS Synthesis with Semantic Awareness"</h1>
@@ -30,13 +46,53 @@
   <a href="#table2" class="content-link">1-hour LJSpeech</a>
   <a href="#table3" class="content-link">EmoV_DB_bea_sem</a>
 
-  <!-- 音频样本 -->
-  <h2>音频样本</h2>
+  <!-- 摘要的音频样本 -->
+  <!-- <h2>Reading the abstract</h2>
   <audio controls>
     <source src="sample.wav" type="audio/mpeg">
     您的浏览器不支持 audio 元素。
-  </audio>
+  </audio> -->
   <!-- 可以继续添加更多的音频文件 -->
+
+  <!-- 摘要的音频样本 -->
+  <h2>Reading the abstract</h2>
+  <div class="audio-description">
+    <div class="description">Introduction:</div>
+    <audio controls>
+      <source src="sample1.wav" type="audio/mpeg">
+      您的浏览器不支持 audio 元素。
+    </audio>
+  </div>
+  <div class="audio-description">
+    <div class="description">Research Question:</div>
+    <audio controls>
+      <source src="sample2.wav" type="audio/mpeg">
+      您的浏览器不支持 audio 元素。
+    </audio>
+  </div>
+  <div class="audio-description">
+    <div class="description">Methodology Overview:</div>
+    <audio controls>
+      <source src="sample3.wav" type="audio/mpeg">
+      您的浏览器不支持 audio 元素。
+    </audio>
+  </div>
+  <div class="audio-description">
+    <div class="description">Key Findings:</div>
+    <audio controls>
+      <source src="sample4.wav" type="audio/mpeg">
+      您的浏览器不支持 audio 元素。
+    </audio>
+  </div>
+  <div class="audio-description">
+    <div class="description">Conclusion and Implications:</div>
+    <audio controls>
+      <source src="sample5.wav" type="audio/mpeg">
+      您的浏览器不支持 audio 元素。
+    </audio>
+  </div>
+  <!-- 可以继续添加更多的音频文件 -->
+
 
   <!-- 表格1 -->
   <h2 id="table1">full LJSpeech</h2>
