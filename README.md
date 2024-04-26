@@ -1,1 +1,1 @@
-This is the audio sample demo page for Llama-VITS. 
+This is the audio samples demo page for Llama-VITS. 
