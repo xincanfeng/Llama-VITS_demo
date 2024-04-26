@@ -328,21 +328,107 @@
   <table>
     <tr>
       <th>Model</th>
-      <th class="text">t1</th>
-      <th class="text">t2</th>
-      <th class="text">t3</th>
+      <th class="text">He would first hunt up Gregson and begin his work there.</th>
+      <th class="text">Close beside him gleamed the white fangs of the wolf-dog.</th>
+      <th class="text">Her words sent a strange chill through Philip.</th>
+      <th class="text">It was his intention to return to Eileen and her father.</th>
+      <th class="text">Gregson was asleep when he re-entered the cabin.</th>
     </tr>
     <tr>
-      <td>Model C</td>
-      <td><audio controls><source src="sample.wav" type="audio/mpeg"></audio></td>
-      <td><audio controls><source src="sample.wav" type="audio/mpeg"></audio></td>
-      <td><audio controls><source src="sample.wav" type="audio/mpeg"></audio></td>
+      <td>Ground Truth</td>
+      <td><audio controls><source src="gt_amused_57-84_0070.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="gt_angry_29-56_0047.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="gt_disgustededed_113-140_0114.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="gt_neutral_57-84_0069.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="gt_sleepy_29-56_0049.wav" type="audio/mpeg"></audio></td>
     </tr>
     <tr>
-      <td>Model D</td>
-      <td><audio controls><source src="sample.wav" type="audio/mpeg"></audio></td>
-      <td><audio controls><source src="sample.wav" type="audio/mpeg"></audio></td>
-      <td><audio controls><source src="sample.wav" type="audio/mpeg"></audio></td>
+      <td>ORI-VITS</td>
+      <td><audio controls><source src="ori_amused_57-84_0070.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="ori_angry_29-56_0047.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="ori_disgustededed_113-140_0114.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="ori_neutral_57-84_0069.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="ori_sleepy_29-56_0049.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td>BERT-VITS w/ [CLS]</td>
+      <td><audio controls><source src="bert-cls_amused_57-84_0070.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-cls_angry_29-56_0047.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-cls_disgustededed_113-140_0114.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-cls_neutral_57-84_0069.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-cls_sleepy_29-56_0049.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td>BERT-VITS w/ [BERT_TEX]</td>
+      <td><audio controls><source src="bert-tex_amused_57-84_0070.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-tex_angry_29-56_0047.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-tex_disgustededed_113-140_0114.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-tex_neutral_57-84_0069.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-tex_sleepy_29-56_0049.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td>BERT-VITS w/ [BERT_PHO]</td>
+      <td><audio controls><source src="bert-pho_amused_57-84_0070.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-pho_angry_29-56_0047.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-pho_disgustededed_113-140_0114.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-pho_neutral_57-84_0069.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="bert-pho_sleepy_29-56_0049.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td><b>Llama-VITS w/ [AVE]</b></td>
+      <td><audio controls><source src="llama-ave_amused_57-84_0070.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-ave_angry_29-56_0047.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-ave_disgustededed_113-140_0114.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-ave_neutral_57-84_0069.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-ave_sleepy_29-56_0049.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td><b>Llama-VITS w/ [PCA]</b></td>
+      <td><audio controls><source src="llama-pca_amused_57-84_0070.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-pca_angry_29-56_0047.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-pca_disgustededed_113-140_0114.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-pca_neutral_57-84_0069.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-pca_sleepy_29-56_0049.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td><b>Llama-VITS w/ [LAST]</b></td>
+      <td><audio controls><source src="llama-last_amused_57-84_0070.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-last_angry_29-56_0047.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-last_disgustededed_113-140_0114.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-last_neutral_57-84_0069.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-last_sleepy_29-56_0049.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td><b>Llama-VITS w/ [EIS_Word]</b></td>
+      <td><audio controls><source src="llama-word_amused_57-84_0070.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-word_angry_29-56_0047.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-word_disgustededed_113-140_0114.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-word_neutral_57-84_0069.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-word_sleepy_29-56_0049.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td><b>Llama-VITS w/ [EIS_Sentence]</b></td>
+      <td><audio controls><source src="llama-sentence_amused_57-84_0070.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-sentence_angry_29-56_0047.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-sentence_disgustededed_113-140_0114.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-sentence_neutral_57-84_0069.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-sentence_sleepy_29-56_0049.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td><b>Llama-VITS w/ [TEX]</b></td>
+      <td><audio controls><source src="llama-tex_amused_57-84_0070.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-tex_angry_29-56_0047.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-tex_disgustededed_113-140_0114.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-tex_neutral_57-84_0069.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-tex_sleepy_29-56_0049.wav" type="audio/mpeg"></audio></td>
+    </tr>
+    <tr>
+      <td><b>Llama-VITS w/ [PHO]</b></td>
+      <td><audio controls><source src="llama-pho_amused_57-84_0070.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-pho_angry_29-56_0047.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-pho_disgustededed_113-140_0114.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-pho_neutral_57-84_0069.wav" type="audio/mpeg"></audio></td>
+      <td><audio controls><source src="llama-pho_sleepy_29-56_0049.wav" type="audio/mpeg"></audio></td>
     </tr>
   </table>
 
