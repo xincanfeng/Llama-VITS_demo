@@ -2,23 +2,6 @@
 <html lang="en">
 <head>
   <title>Audio Samples from Llama-VITS</title>
-  <!-- <style>
-    table, th, td {
-      border: 0px solid black;
-      border-collapse: collapse;
-    }
-    th, td {
-      padding: 8px;
-      text-align: left;
-    }
-    audio {
-      width: 150px;
-    }
-    .content-link {
-      padding: 5px;
-      display: block;
-    }
-  </style> -->
   <style>
     .audio-description {
       display: flex;
@@ -34,7 +17,39 @@
     audio {
       width: 200px; /* 设置音频控件宽度 */
     }
-    </style>    
+
+    .contents-list {
+      list-style-type: disc; /* 默认圆点作为项目符号 */
+      padding-left: 20px; /* 确保有足够的空间显示项目符号 */
+    }
+
+    .content-link {
+      display: block; /* 使链接独占一行，表现为块级元素 */
+      padding: 5px; /* 添加内边距 */
+      text-decoration: none; /* 可选：去除下划线 */
+      color: black; /* 可选：设置文字颜色 */
+    }
+
+    .content-link:hover {
+      text-decoration: underline; /* 鼠标悬停时添加下划线，增加交互性 */
+    }
+
+    table, th, td {
+      border: 0px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    audio {
+      width: 150px;
+    }
+    .content-link {
+      padding: 5px;
+      display: block;
+    }
+    </style>
 </head>
 <body>
   <h1>Audio Samples from "Llama-VITS: Enhancing TTS Synthesis with Semantic Awareness"</h1>
@@ -42,17 +57,11 @@
 
   <!-- 目录 -->
   <h2>Contents</h2>
-  <a href="#table1" class="content-link">full LJSpeech</a>
-  <a href="#table2" class="content-link">1-hour LJSpeech</a>
-  <a href="#table3" class="content-link">EmoV_DB_bea_sem</a>
-
-  <!-- 摘要的音频样本 -->
-  <!-- <h2>Reading the abstract</h2>
-  <audio controls>
-    <source src="sample.wav" type="audio/mpeg">
-    您的浏览器不支持 audio 元素。
-  </audio> -->
-  <!-- 可以继续添加更多的音频文件 -->
+  <ul class="contents-list">
+    <li><a href="#table1" class="content-link">full LJSpeech</a></li>
+    <li><a href="#table2" class="content-link">1-hour LJSpeech</a></li>
+    <li><a href="#table3" class="content-link">EmoV_DB_bea_sem</a></li>
+  </ul>
 
   <!-- 摘要的音频样本 -->
   <h2>Reading the abstract</h2>
@@ -60,35 +69,35 @@
     <div class="description">Introduction:</div>
     <audio controls>
       <source src="sample.wav" type="audio/mpeg">
-      您的浏览器不支持 audio 元素。
+      Your browser does not support the audio element.
     </audio>
   </div>
   <div class="audio-description">
     <div class="description">Research Question:</div>
     <audio controls>
       <source src="sample.wav" type="audio/mpeg">
-      您的浏览器不支持 audio 元素。
+      Your browser does not support the audio element.
     </audio>
   </div>
   <div class="audio-description">
     <div class="description">Methodology Overview:</div>
     <audio controls>
       <source src="sample.wav" type="audio/mpeg">
-      您的浏览器不支持 audio 元素。
+      Your browser does not support the audio element.
     </audio>
   </div>
   <div class="audio-description">
     <div class="description">Key Findings:</div>
     <audio controls>
       <source src="sample.wav" type="audio/mpeg">
-      您的浏览器不支持 audio 元素。
+      Your browser does not support the audio element.
     </audio>
   </div>
   <div class="audio-description">
     <div class="description">Conclusion and Implications:</div>
     <audio controls>
       <source src="sample.wav" type="audio/mpeg">
-      您的浏览器不支持 audio 元素。
+      Your browser does not support the audio element.
     </audio>
   </div>
   <!-- 可以继续添加更多的音频文件 -->
