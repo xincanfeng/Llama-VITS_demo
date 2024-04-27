@@ -57,11 +57,17 @@
 
     /* 设置 iframe 基本样式 */
     iframe {
-      width: 90%;       /* 默认全宽 */
-      /* height: 90%;     默认高度 */
-      height: 80vh;    /* 视窗高度的80% */
+      width: 100%;       /* 默认全宽 */
+      height: 100vh;    /* 视窗高度的80% */
       border: none;      /* 移除边框 */
       background-color: white; /* iframe 的背景颜色 */
+    }
+
+    @media (max-width: 768px) {
+      iframe {
+        width: 100%;    /* 在较小屏幕上依然全宽 */
+        height: 50vh;   /* 在较小屏幕上高度为视窗的50% */
+      }
     }
     </style>
 </head>
@@ -95,8 +101,8 @@
   <!-- 可以继续添加更多的音频文件 -->
 
     <iframe src="pipeline.pdf" title="Pipeline"></iframe>
-    <iframe src="prompt_word.pdf" title="Pipeline"></iframe>
-    <iframe src="prompt_sentence.pdf" title="Pipeline"></iframe>
+    <!-- <iframe src="prompt_word.pdf" title="Pipeline"></iframe> -->
+    <!-- <iframe src="prompt_sentence.pdf" title="Pipeline"></iframe> -->
 
     <!-- <img src="pipeline.jpg" alt="Pipeline"> -->
 
