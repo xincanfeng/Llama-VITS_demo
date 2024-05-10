@@ -25,7 +25,7 @@
 # 源目录和目标目录
 target_dir="/data/Llama-VITS_demo"  # 替换为您的目标目录路径
 
-source_dir="/data/vitsGPT/vits/ori_vits/logs/emovdb_emo_add_ave_pretrained16/G_150000/model_test_wav"  # 替换为您的源目录路径
+source_dir="/data/vitsGPT/vits/ori_vits/logs/emovdb_base_pretrained16/G_150000/model_test_wav"  # 替换为您的源目录路径
 rename="ori"  # 为重命名的前缀赋值
 
 source_dir="/data/vitsGPT/vits/emo_vits/logs/emovdb_emo_add_ave_pretrained16/G_150000/model_test_wav"  # 替换为您的源目录路径
